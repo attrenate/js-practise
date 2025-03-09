@@ -36,3 +36,28 @@ console.log(true || false);
 const computerMove = ''; 
 let result;
 const randomNumber = Math.random();
+
+
+// sum othe thing ig
+const currency = 'EUR' || 'USD';
+console.log(currency);
+
+
+// practisising if statements
+let morning = 12;
+let noon = 17;
+let evening = 23;
+let hour = parseInt(prompt('Choose an hour: '), 10);
+
+
+
+if (hour < morning) {
+    console.log('Good morning');
+} else if (hour < noon) {
+    console.log('Good afternoon');
+} else if (hour <= evening) {
+    console.log('Good evening');
+} else {
+    console.log('Invalid hour'); 
+}
+
