@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Objects</title>
+    </head>
+    <body>
+        <p>Rock Paper Scissors</p> 
+        <button onclick="
+          playgame();
+        ">Rock</button>
+        <button onclick="
+         console.log(pickComputerMove());
+        ">Paper</button>
+        <button onclick="
+        console.log(pickComputerMove());
+        ">Scissors</button>
+        <button onclick="
+        score.wins = 0;
+        score.losses = 0;
+        score.ties = 0;
+        ">Reset score</button>
+        <script src="object.js" defer></script>
+    </body>
+</html>
