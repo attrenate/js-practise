@@ -85,11 +85,22 @@ function calculateTax(x, taxPercent = 0.1) {
 calculateTax(2000, 0.2);
 calculateTax(5000, 0.25);
 
-const score = {
+let score = {
     wins: 0,
     losses: 0,
     ties: 0
 };
+console.log(localStorage.getItem('message'));
+
+ score = JSON.parse(localStorage.getItem('score'));
+// score === null is the same as !score.
+ if(score === null){
+    score = {
+        wins: 0,
+        losses: 0,
+        ties: 0 
+    };
+ } 
 
 function playgame(playerMove) {
     const randomNumber = Math.random();
@@ -140,7 +151,32 @@ function playgame(playerMove) {
      } else if(result === 'Tie.'){
         score.ties += 1;
      }
+     // localStorage only supports strings.
+     localStorage.setItem('message', 'hello');
+     localStorage.setItem('score', JSON.stringify(score));
+
     alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}
         wins: ${score.wins}, losses: ${score.losses}, ties: ${score.ties}`);
     return computerMove;
 }
+console.log('hello'.length);
+console.log('hello'.toUpperCase());
+// objects are references
+// copy by reference.
+const object1 = {
+    message: 'hello'
+};
+const object2 = object1;
+
+object1.message = 'good job';
+console.log(object1);
+console.log(object2);
+
+// we can't compare object directly
+//we're actually comparing references and not the objects themselves.
+
+const object3 = {
+    message: 'good job!'
+};
+console.log(object3 === object1);
+console.log(object2 === object1);
