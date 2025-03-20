@@ -30,3 +30,8 @@ headButton.addEventListener('click', function () {
 tailsButton.addEventListener('click', function () {
     choiceDisplay.textContent = 'tails'; 
 });
+
+document.querySelector('.js-submit').addEventListener('click', function () {
+    const name = document.querySelector('.js-input').value; 
+    document.querySelector('.js-output').textContent = `Your name is ${name}`; 
+  });
