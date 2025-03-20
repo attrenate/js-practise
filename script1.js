@@ -1,8 +1,12 @@
 let variable1 = 3;
 let sum = 2 + 2;
 let message = 'hello';
+variable1 = 5;
+variable1 = variable1 + 1;
+console.log(variable1);
 console.log(sum + 2);
 console.log(message);
+console.log(variable1);
 alert("Hello");
 console.log('2+2');
 console.log(variable1);

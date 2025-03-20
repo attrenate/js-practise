@@ -3,6 +3,9 @@
   padding: 0;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 body .universal-wrapper {
   display: flex;
   flex-direction: column;
@@ -58,4 +61,8 @@ body .universal-wrapper .amazon-section .cal {
   cursor: pointer;
   color: white;
   font-weight: bold;
+}
+body .is-subscribed {
+  background-color: grey;
+  color: black;
 }/*# sourceMappingURL=lesson-10.css.map */

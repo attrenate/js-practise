@@ -4,6 +4,7 @@
 }
 
 body{
+    font-family: Arial, Helvetica, sans-serif;
     .universal-wrapper{
         display: flex;
         flex-direction: column;
@@ -58,5 +59,9 @@ body{
                 font-weight: bold;
             }
         }
+    }
+    .is-subscribed{
+        background-color: grey;
+        color: black;
     }
 }
