@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="lesson-10.css">
+        <title>lesson-10</title>
+    </head>
+    <body>
+        <div class="universal-wrapper">
+            <div class="youtube-section">
+                <p class="youtube-p">Youtube Subscribe button</p>
+                <button onclick="
+                subscribe();
+                " class="js-subscribe-button">Subscribe</button>
+            </div>
+            <div class="amazon-section">
+                <p class="amazon-p">Amazon Shipping Calculator</p>
+                <p>orders under $4- = +$10 shipping.</p>
+                <p>Orders over $40 = FREE shipping.</p>
+                <div class="inputPlusButton">
+                    <input placeholder="Cost of order" class="js-cost-input" onkeydown="
+                   handleCostKeydown(event);
+                    ">
+                    <button onclick="
+                    calTotal();
+                    " class="cal">Calculate</button>
+                    <p class="js-total-cost"></p>
+                </div>
+             </div>
+         </div>
+        <script src="lesson-10.js"></script>
+    </body>
+</html>
