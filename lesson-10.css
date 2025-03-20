@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body .universal-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+body .universal-wrapper .youtube-section {
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+body .universal-wrapper .youtube-section .js-subscribe-button {
+  margin-top: 1rem;
+  background-color: khaki;
+  border-color: khaki;
+  width: 6rem;
+  height: 3rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  color: green;
+  font-weight: bold;
+}
+body .universal-wrapper .youtube-section .youtube-p {
+  font-size: 2rem;
+  font-weight: 700;
+}
+body .universal-wrapper .amazon-section {
+  margin-left: 2rem;
+}
+body .universal-wrapper .amazon-section .amazon-p {
+  font-size: 2rem;
+  font-weight: 700;
+}
+body .universal-wrapper .amazon-section .inputPlusButton {
+  margin-top: 1rem;
+}
+body .universal-wrapper .amazon-section .js-cost-input {
+  width: 12rem;
+  height: 3rem;
+}
+body .universal-wrapper .amazon-section input::-moz-placeholder {
+  color: black;
+  border-color: black;
+}
+body .universal-wrapper .amazon-section input::placeholder {
+  color: black;
+  border-color: black;
+}
+body .universal-wrapper .amazon-section .cal {
+  width: 6rem;
+  height: 3rem;
+  background-color: green;
+  border-color: green;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}/*# sourceMappingURL=lesson-10.css.map */
