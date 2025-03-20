@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    .universal-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 2rem;
+        .youtube-section{
+          margin-top: 2rem;
+          margin-left: 2rem;
+          .js-subscribe-button{
+            margin-top: 1rem;
+            background-color: khaki;
+            border-color: khaki;
+            width: 6rem;
+            height: 3rem;
+            border-radius: 2rem;
+            cursor: pointer;
+            color: green;
+            font-weight: bold;
+            
+          }
+          .youtube-p{
+            font-size: 2rem;
+            font-weight: 700;
+
+          }
+        }
+        .amazon-section{
+            margin-left: 2rem;
+            .amazon-p{
+                font-size: 2rem;
+                font-weight: 700;
+            }
+            .inputPlusButton{
+                margin-top: 1rem;
+            }
+            .js-cost-input{
+                width: 12rem;
+                height: 3rem;
+                
+            }
+            input::placeholder{
+                color: black;
+                border-color: black;
+            }
+            .cal{
+                width: 6rem;
+                height: 3rem;
+                background-color: green;
+                border-color: green;
+                cursor: pointer;
+                color: white;
+                font-weight: bold;
+            }
+        }
+    }
+}
